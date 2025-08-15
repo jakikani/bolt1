@@ -8,7 +8,7 @@ export const SignupPage: React.FC = () => {
   const { isAuthenticated } = useAuth();
 
   if (isAuthenticated) {
-    return <Navigate to="/onboarding" replace />;
+    return <Navigate to="/app/onboarding" replace />;
   }
 
   return (

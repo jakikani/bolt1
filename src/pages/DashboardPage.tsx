@@ -15,7 +15,7 @@ export const DashboardPage: React.FC = () => {
   const storedPreferences = localStorage.getItem('userPreferences');
   
   if (!storedPreferences) {
-    return <Navigate to="/onboarding" replace />;
+    return <Navigate to="/app/onboarding" replace />;
   }
 
   const preferences: UserPreferences = JSON.parse(storedPreferences);

@@ -35,27 +35,27 @@ export const Footer: React.FC = () => {
             <h4 className="text-lg font-semibold mb-4">Quick Links</h4>
             <ul className="space-y-2">
               <li>
-                <Link to="/dashboard" className="text-gray-300 hover:text-white transition-colors">
+                <Link to="/app/dashboard" className="text-gray-300 hover:text-white transition-colors">
                   Dashboard
                 </Link>
               </li>
               <li>
-                <Link to="/meals" className="text-gray-300 hover:text-white transition-colors">
+                <Link to="/app/meals" className="text-gray-300 hover:text-white transition-colors">
                   Meal Plans
                 </Link>
               </li>
               <li>
-                <Link to="/grocery" className="text-gray-300 hover:text-white transition-colors">
+                <Link to="/app/grocery" className="text-gray-300 hover:text-white transition-colors">
                   Grocery Lists
                 </Link>
               </li>
               <li>
-                <Link to="/budget" className="text-gray-300 hover:text-white transition-colors">
+                <Link to="/app/budget" className="text-gray-300 hover:text-white transition-colors">
                   Budget Tracker
                 </Link>
               </li>
               <li>
-                <Link to="/settings" className="text-gray-300 hover:text-white transition-colors">
+                <Link to="/app/settings" className="text-gray-300 hover:text-white transition-colors">
                   Settings
                 </Link>
               </li>

@@ -15,7 +15,7 @@ export const OnboardingPage: React.FC = () => {
     // Store preferences in localStorage for now
     localStorage.setItem('userPreferences', JSON.stringify(preferences));
     // In a real app, you'd send this to your backend
-    window.location.href = '/dashboard';
+    window.location.href = '/app/dashboard';
   };
 
   return <OnboardingFlow onComplete={handleOnboardingComplete} />;

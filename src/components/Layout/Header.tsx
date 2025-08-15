@@ -21,11 +21,11 @@ export const Header: React.FC = () => {
   const location = useLocation();
 
   const navigation = [
-    { name: 'Dashboard', href: '/dashboard', icon: Home },
-    { name: 'Meal Plans', href: '/meals', icon: Calendar },
-    { name: 'Grocery Lists', href: '/grocery', icon: ShoppingCart },
-    { name: 'Budget Tracker', href: '/budget', icon: TrendingUp },
-    { name: 'Settings', href: '/settings', icon: Settings },
+    { name: 'Dashboard', href: '/app/dashboard', icon: Home },
+    { name: 'Meal Plans', href: '/app/meals', icon: Calendar },
+    { name: 'Grocery Lists', href: '/app/grocery', icon: ShoppingCart },
+    { name: 'Budget Tracker', href: '/app/budget', icon: TrendingUp },
+    { name: 'Settings', href: '/app/settings', icon: Settings },
   ];
 
   const isActive = (path: string) => location.pathname === path;
@@ -40,7 +40,7 @@ export const Header: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
-          <Link to="/dashboard" className="flex items-center space-x-3">
+          <Link to="/app/dashboard" className="flex items-center space-x-3">
             <div className="bg-gradient-to-r from-green-500 to-blue-500 p-2 rounded-lg">
               <ChefHat className="h-6 w-6 text-white" />
             </div>
@@ -93,7 +93,7 @@ export const Header: React.FC = () => {
               {isProfileMenuOpen && (
                 <div className="absolute right-0 mt-2 w-48 bg-white rounded-lg shadow-lg border border-gray-200 py-1 z-50">
                   <Link
-                    to="/profile"
+                    to="/app/profile"
                     className="flex items-center space-x-2 px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
                     onClick={() => setIsProfileMenuOpen(false)}
                   >
@@ -101,7 +101,7 @@ export const Header: React.FC = () => {
                     <span>Profile</span>
                   </Link>
                   <Link
-                    to="/settings"
+                    to="/app/settings"
                     className="flex items-center space-x-2 px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
                     onClick={() => setIsProfileMenuOpen(false)}
                   >
