@@ -58,6 +58,63 @@ export const mockMeals: Meal[] = [
       { id: '9', name: 'Jasmine Rice', quantity: 100, unit: 'g', category: 'pantry', estimatedCost: 0.80 },
     ],
   },
+  {
+    id: '4',
+    name: 'Greek Yogurt Parfait',
+    image: 'https://images.pexels.com/photos/1092730/pexels-photo-1092730.jpeg?auto=compress&cs=tinysrgb&w=400',
+    calories: 280,
+    cookingTime: 5,
+    difficulty: 'Easy',
+    nutrition: {
+      protein: 20,
+      carbs: 35,
+      fat: 8,
+      fiber: 6,
+    },
+    ingredients: [
+      { id: '10', name: 'Greek Yogurt', quantity: 200, unit: 'g', category: 'dairy', estimatedCost: 2.50 },
+      { id: '11', name: 'Mixed Berries', quantity: 100, unit: 'g', category: 'produce', estimatedCost: 3.00 },
+      { id: '12', name: 'Granola', quantity: 50, unit: 'g', category: 'pantry', estimatedCost: 1.50 },
+    ],
+  },
+  {
+    id: '5',
+    name: 'Turkey Sandwich',
+    image: 'https://images.pexels.com/photos/1603901/pexels-photo-1603901.jpeg?auto=compress&cs=tinysrgb&w=400',
+    calories: 350,
+    cookingTime: 10,
+    difficulty: 'Easy',
+    nutrition: {
+      protein: 25,
+      carbs: 40,
+      fat: 12,
+      fiber: 5,
+    },
+    ingredients: [
+      { id: '13', name: 'Whole Wheat Bread', quantity: 2, unit: 'slices', category: 'bakery', estimatedCost: 1.00 },
+      { id: '14', name: 'Turkey Slices', quantity: 100, unit: 'g', category: 'meat', estimatedCost: 3.50 },
+      { id: '15', name: 'Lettuce', quantity: 50, unit: 'g', category: 'produce', estimatedCost: 0.75 },
+    ],
+  },
+  {
+    id: '6',
+    name: 'Quinoa Bowl',
+    image: 'https://images.pexels.com/photos/1640770/pexels-photo-1640770.jpeg?auto=compress&cs=tinysrgb&w=400',
+    calories: 400,
+    cookingTime: 30,
+    difficulty: 'Medium',
+    nutrition: {
+      protein: 18,
+      carbs: 55,
+      fat: 14,
+      fiber: 10,
+    },
+    ingredients: [
+      { id: '16', name: 'Quinoa', quantity: 100, unit: 'g', category: 'pantry', estimatedCost: 2.00 },
+      { id: '17', name: 'Black Beans', quantity: 150, unit: 'g', category: 'pantry', estimatedCost: 1.25 },
+      { id: '18', name: 'Avocado', quantity: 1, unit: 'piece', category: 'produce', estimatedCost: 2.50 },
+    ],
+  },
 ];
 
 export const mockStores: Record<string, GroceryStore[]> = {
